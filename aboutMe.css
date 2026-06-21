@@ -1,0 +1,206 @@
+* {
+    box-sizing: border-box;
+}
+
+body{
+  font-family: "Google Sans Flex", sans-serif;
+  font-weight: 250;
+  font-style: normal;
+  font-variation-settings: "opsz" 14, "wght"250;
+  font-size: 15px;
+  color: black;
+}
+
+header{
+    background-color: #1fddcd88;
+    padding: 30px;
+    margin: 2px 0 0 0;
+    text-align: left;
+    border-radius: 10px;
+}
+
+h1{
+    font-size: 50px;
+    color: black;
+    margin: 0;
+    text-align: center;
+}
+
+.contact-links{
+    display: flex;
+    justify-content: right;
+    gap: 5px;
+    margin-top: 50px;
+    font-size: small;
+    cursor: pointer;
+    padding: 10px 10px;
+    text-decoration: none; 
+}
+ 
+.contact-links a:hover{
+    color: #26018b88;
+    text-decoration: underline;
+}
+
+.contact-links a{
+    color:blue;
+    text-decoration: none;
+    margin: 7px;
+}
+
+.contact-links .btttn{
+    background-color: transparent;
+    border-color: transparent;
+    text-decoration: none;
+}
+
+main{
+    padding: 20px;
+    margin: 10px 0 0 0;
+    background-color: #07f1de88;
+    border-radius: 10px;
+}
+
+.Introduction{
+    margin: 20px;
+    padding: 10px;
+    background-color: #1fddcd88;
+}
+
+.Introduction img{
+    float: left;
+    margin: 30px;
+    border-radius: 0;
+    width: 300px;
+    height: 400px;
+}
+
+main .myProjects{
+    padding: 30px;
+    margin: 6px 10px 10px 5px;
+}
+
+.myProjects img{
+    width: 200px;
+    height: 200px;
+    gap: 4px;
+}
+
+.myProjects h3{
+    text-align: left;
+    font-size: 20px;
+    color: black;
+    margin-top: 1px;
+}
+
+.myProjects img:hover{
+    transform: scale(1.1);
+    transition: transform 0.2s ease-in-out;
+}
+
+.myContact {
+  background-color:#0A1F44;
+  padding: 40px;
+  border-radius:5px;
+}
+
+.myContact h4{
+  color: #07f1de88;
+  font-size: 20px;
+  margin-bottom: 20px;
+
+}
+
+.myContact .Details {
+  background-color: #FFFFFF;
+  padding: 25px;
+  border-radius: 5px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  margin: 0 auto;
+}
+
+.Details label {
+  display: block;
+  margin-top: 12px;
+}
+
+.Details input {
+  height: 40px;
+}
+
+.Details textarea {
+  height: 120px;
+}
+
+
+.Details input,
+.Details textarea {
+  display: block;
+  margin-bottom: 12px;
+  width: 50%;
+}
+
+.Details button {
+  background-color: #1cd4c5fd;
+  color: black;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.Details button:hover {
+  background-color: #1cd4c5;
+  color: white;
+}
+
+/* Mobile */
+@media screen and (max-width: 480px) {
+
+    header {
+        padding: 20px;
+    }
+
+    h1 {
+        font-size: 30px;
+    }
+
+    .contact-links {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+        margin-top: 15px;
+    }
+
+    .Introduction {
+        margin: 10px;
+        padding: 10px;
+    }
+
+    .Introduction img {
+        float: none;
+        display: block;
+        width: 100%;
+        max-width: 250px;
+        height: auto;
+        margin: 15px auto;
+    }
+
+    .myContact {
+        padding: 20px;
+    }
+
+    .myContact .Details {
+        padding: 15px;
+    }
+
+    .Details input,
+    .Details textarea {
+        width: 100%;
+    }
+
+    .myProjects img {
+        width: 150px;
+        height: 150px;
+    }
+}
