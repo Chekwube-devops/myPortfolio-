@@ -35,16 +35,25 @@ header{
     padding: 5px 5px;
 }
 
-.Project-Main img{
+.Projects img{
     width: 300px;
     height: 200px;
     border-radius: 5px;
 }
 
-.Project-Main img:hover{
+.Projects img:hover{
      transform: scale(1.1);
     transition: transform 0.3s ease-in-out;
 }
+
+.Projects{
+    display: block;
+    justify-content: left;
+    margin: 10px;
+    font-size: small;
+    padding: 5px 5px;
+}
+
 
 .Skills{
     display: block;
